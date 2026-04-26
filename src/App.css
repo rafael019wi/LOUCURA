@@ -146,3 +146,77 @@ img {
   border-radius: 10px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
+
+/* ========================= */
+/* LINKS DA PÁGINA CONTATOS */
+/* ========================= */
+
+main ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 20px;
+  padding-left: 0;
+}
+
+main li {
+  font-size: 18px;
+}
+
+/* Link base */
+main a {
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 6px 10px;
+  border-radius: 8px;
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* RESET garante animação pra todos */
+main a:hover {
+  transform: translateX(6px);
+}
+
+/* GitHub */
+main a[href*="github"] {
+  color: #cbd5e1;
+}
+
+main a[href*="github"]:hover {
+  color: #fff;
+  background: #111827;
+}
+
+/* LinkedIn */
+main a[href*="linkedin"] {
+  color: #cbd5e1;
+}
+
+main a[href*="linkedin"]:hover {
+  color: #ffffff;
+  background: #0A66C2;
+}
+
+/* WhatsApp */
+main a[href*="wa.me"] {
+  color: #cbd5e1;
+}
+
+main a[href*="wa.me"]:hover {
+  color: #ffffff;
+  background: #25D366;
+}
+
+/* Email */
+main li a[href^="mailto"] {
+  color: #cbd5e1;
+}
+
+main li a[href^="mailto"]:hover {
+  color: #fff;
+  background: #f97316;
+}

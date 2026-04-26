@@ -1,6 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/footer";
-import mapaMental from "../assets/mapa_mental.png";
+import padlet from "../assets/aa.png";
 function Home() {
   return (
     <>
@@ -18,6 +18,10 @@ function Home() {
           Tenho muito interesse em seguir na área e evoluir como pessoa.
           <br></br><br></br><br></br><br></br>
           Esse padlet mostra um pouco sobre minha trajetória como profissional
+          <br></br><br></br>
+          <a href="https://padlet.com/rafael019wi/meu-resumo-profissional-i8l78w51z8emo7om" target="_blank" rel="noopener noreferrer">
+          <img src={padlet} alt="Descrição da imagem" />
+          </a>
         </h2>
         
         

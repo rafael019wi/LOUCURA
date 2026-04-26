@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/footer";
+
 function Contatos() {
   return (
     <>
@@ -7,8 +8,51 @@ function Contatos() {
 
       <main>
         <h1>Meus Contatos</h1>
-        <p>Aqui estão meus Contatos</p>
+        <p>Entre em contato comigo pelas plataformas abaixo:</p>
+
+        <ul>
+          <li>
+            GitHub:{" "}
+            <a
+              href="https://github.com/rafael019wi"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              github.com/rafael019wi
+            </a>
+          </li>
+
+          <li>
+            LinkedIn:{" "}
+            <a
+              href="https://www.linkedin.com/in/rafael-alves-de-oliveira/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              linkedin.com/in/rafael-alves-de-oliveira
+            </a>
+          </li>
+
+          <li>
+            WhatsApp:{" "}
+            <a
+              href="https://wa.me/5519971293595"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              (55) 1997129-3595
+            </a>
+          </li>
+
+          <li>
+            E-mail:{""}
+            <a href="rafael019wi@gmail.com">
+              rafael019wi@gmail.com
+            </a>
+          </li>
+        </ul>
       </main>
+
       <Footer />
     </>
   );
