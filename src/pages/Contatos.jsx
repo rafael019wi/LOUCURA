@@ -46,7 +46,11 @@ function Contatos() {
 
           <li>
             E-mail:{""}
-            <a href="rafael019wi@gmail.com">
+            <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=rafael019wi@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
               rafael019wi@gmail.com
             </a>
           </li>
