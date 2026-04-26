@@ -1,9 +1,15 @@
+import { motion } from "framer-motion";
 import Header from "../components/Header";
 import Footer from "../components/footer";
 
 function Contatos() {
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -20 }}
+      transition={{ duration: 0.4 }}
+    >
       <Header />
 
       <main>
@@ -45,21 +51,39 @@ function Contatos() {
           </li>
 
           <li>
-            E-mail:{""}
+            E-mail:{" "}
             <a
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=rafael019wi@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=rafael019wi@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               rafael019wi@gmail.com
             </a>
           </li>
         </ul>
-        <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br> 
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
       </main>
 
       <Footer />
-    </>
+    </motion.div>
   );
 }
 
