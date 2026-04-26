@@ -9,8 +9,7 @@ function Header() {
     <header style={{ backgroundImage: `url(${codigo})` }}>
       
       <h1
-        className={`nome ${flipped ? "flipped" : ""}`}
-        onClick={() => setFlipped(!flipped)}
+        
       >
         Rafael Alves de Oliveira
       </h1>
