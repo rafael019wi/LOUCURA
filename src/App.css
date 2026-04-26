@@ -220,3 +220,14 @@ main li a[href^="mailto"]:hover {
   color: #fff;
   background: #f97316;
 }
+
+.nome {
+  cursor: pointer;
+  transition: transform 0.8s ease;
+  transform-style: preserve-3d;
+}
+
+/* animação de “virar” */
+.nome.flipped {
+  transform: rotateY(180deg);
+}
