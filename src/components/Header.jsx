@@ -8,9 +8,7 @@ function Header() {
   return (
     <header style={{ backgroundImage: `url(${codigo})` }}>
       
-      <h1
-        
-      >
+      <h1>
         Rafael Alves de Oliveira
       </h1>
 
