@@ -1,33 +1,153 @@
-html, body, #root {
-  height: 100%;
+/* Reset básico */
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-#root {
+/* Corpo */
+body {
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-main {
-  flex: 1;
-  padding: 40px;
+/* Header (título central + menu embaixo) */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 40px 20px;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: white;
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  background: #111;
-  color: white;
+  position: relative;
 }
 
+header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+header * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Título */
+header h1 {
+  font-size: 50px;
+}
+
+/* Menu */
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+/* Links */
 header a {
-  color: white;
-  margin-left: 15px;
+  color: #e2e8f0;
   text-decoration: none;
+  font-size: 16px;
+  position: relative;
+  transition: 0.3s;
+}
+
+header a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background: #38bdf8;
+  transition: 0.3s;
 }
 
 header a:hover {
-  text-decoration: underline;
+  color: #38bdf8;
+}
+
+header a:hover::after {
+  width: 100%;
+}
+
+/* Main */
+main {
+  flex: 1;
+  padding: 60px 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Títulos */
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+main h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main p h1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Grid de projetos */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Card */
+.card {
+  background: #020617;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  text-align: center;
+  padding: 15px;
+  background: #020617;
+}
+img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
